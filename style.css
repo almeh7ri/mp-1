@@ -96,6 +96,10 @@ img{
     height: 100%;
 }
 
+h3{
+    font-size: calc(5px + 3vw);
+    margin-left: 2vw;
+}
 #bio{
     display: flex;
 }
