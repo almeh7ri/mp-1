@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* Purposefully change the font to the "minecraft font" across the site */
+    font-family: "Minecraft", sans-serif;
+}
+
+@font-face {
+    /* Import Minecraft font */
+    /* Found out how to install fonts from:
+    https://stackoverflow.com/questions/107936/how-to-add-some-non-standard-font-to-a-website */
+    font-family: "Minecraft";
+    src: url(src/MinecraftTen-VGORe.ttf) format("truetype");
+}
+
+main h2{
+    padding-top: max(30%, 40vh);
+    font-size: calc(10px + 2vw);
+    font-family: "Minecraft", sans-serif;
+}
+
+main{
+    font-family: "Minecraft", sans-serif;
+    /* Background image of Minecraft theme */
+    /* Source image: https://www.google.com/search?sca_esv=578b7ad8c3c168d5&sca_upv=1&q=minecraft+background&udm=2 */
+    background-image: url(src/minecraft-background.jpg);
+    background-size: 100% 100%;
+    font-size: calc(5px + 2vw);
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding-bottom: min(10%,10vh);
+}
+
+/* Font style for labels */
+label{
+    font-family: "Minecraft", sans-serif;
+}
+
+/* Add margins to create space for input fields */
+#first_number{
+    margin-bottom: 4vh;
+}
+
+#second_number{
+    margin-bottom: 4vh;
+}
+
+/* Formats buttons/labels/inputs */
+#calc-buttons{
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 12vh;
+}
+
+/* Style for navigation links */
+#home a, nav ul li a {
+    border: 0.2vw solid darkred;
+    font-size: calc(2px + 1vw);
+    display: block;
+    text-decoration: none;
+    color: darkred;
+    background-color: orange;
+    text-align: center;
+    padding: 2vh 0;
+    white-space: nowrap;
+}
+
+/* Ensures navigation ul spans the full height */
+nav ul{
+    min-height: 100vh;
+    height: 100%;
+}
+
+main p{
+    font-size: calc(3px + 2vw);
+    max-width: 70%;
+    margin: 3% auto;
+    height: min(2.2vw, 20%);
+}
+
+/* Media query to adjust styles for smaller screens */
+@media screen and (max-width: 750px){
+    main h2{
+        /* Adjust padding at the top for small screens */
+        padding-top: max(30%, 30vh);
+    }
+    nav ul{
+        min-height: 0;
+    }
+    #home a, nav ul li a {
+        border: none;
+        background-color: orange;
+        padding: 1px 0;
+        font-size: calc(4px + 1vw);
+        margin: 0;
+        white-space: nowrap;
+    }
+}
+

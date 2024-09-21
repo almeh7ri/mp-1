@@ -1,0 +1,39 @@
+.list-object{
+    margin: 2vh 0 0 3vw;
+    border-left : 0.75vw solid darkred;
+}
+
+.title {
+    list-style: none;
+    margin: 0;
+    font-size: calc(2px + 1.5vw);
+
+
+}
+main{
+     padding: 5% 0;
+ }
+main li{
+    margin-left: 5%;
+    font-size: calc(1px + 1vw);
+    max-width: 80%;
+}
+#date{
+    font-size: calc(3px + 1vw);
+}
+
+
+
+@media screen and (max-width: 750px) {
+    .company {
+        font-size: 3vw;
+    }
+
+    main li {
+        font-size: 2vw;
+    }
+    #date{
+        font-size: 2.2vw;
+    }
+
+}

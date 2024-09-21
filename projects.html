@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies character encoding and links to external CSS files for styling -->
+    <meta charset="UTF-8">
+    <title>Projects | Resume</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../calc.css">
+</head>
+<body>
+<!-- Header section containing name and brief description of the resume -->
+<header>
+    <H1> Ahmed AlMehri</H1>
+    <p>My Online Resume</p>
+</header>
+
+<div id="middle">
+    <!-- Navigation bar linking to different sections of the resume -->
+    <nav>
+        <ul>
+            <!-- List of navigation links to different pages -->
+            <li id="home"><a href='index.html'>Home</a></li>
+            <li><a href='projects.html'>Projects</a></li>
+            <li><a href="employment.html">Employment</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="extracurriculars.html">Extracurriculars</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content section describing the project -->
+    <main>
+        <!-- Project title -->
+        <h2> Minecraft Calculator </h2>
+
+        <!-- Calculator functionality -->
+        <div id="calc-buttons">
+            <!-- Input fields for entering numbers -->
+            <br id="top">
+            <label for="first_number">First Number:</label><br>
+            <input id="first_number"><br>
+
+            <label for="second_number">Second Number:</label><br>
+            <input id="second_number"><br>
+
+            <!-- Buttons for calculator operations -->
+            <button onclick="addition()">+</button>
+            <button onclick="subtract()">-</button>
+            <button onclick="multiply()">x</button>
+            <button onclick="divide()">/</button>
+            <button onclick="power()">**</button><br>
+
+            <!-- Button to clear the input -->
+            <button onclick="clear_number()">Clear</button>
+
+            <!-- Output field for displaying the result -->
+            <p id="calc-output"></p>
+        </div>
+    </main>
+</div>
+
+<!-- Footer section with external JavaScript file for calculator functionality -->
+<footer>
+    <!-- Link to the JavaScript file that powers the calculator -->
+    <script src="../calculator.js"></script>
+    <p>All Rights Reserved by Ahmed AlMehri <a href="credits.html">Credits</a>&#169;</p>
+</footer>
+</body>
+</html>

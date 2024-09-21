@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+@font-face {
+    /* Found out how to install fonts from:
+    https://stackoverflow.com/questions/107936/how-to-add-some-non-standard-font-to-a-website */
+    font-family: "Space Grotesk";
+    src: url(src/SpaceGrotesk-VariableFont_wght.ttf) format("truetype");
+}
+
+body{
+    max-width: 80%;
+    margin: auto;
+    align-content: center;
+}
+
+header, footer{
+    padding: 1%;
+    background-color: darkred;
+    margin: auto;
+    color: white;
+}
+
+header p {
+    font-size: calc(3px + 1vw);
+    padding: 0 0 0 0.3%;
+}
+
+H1{
+    font-size: calc(10px + 3vw);
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    height: 100%;
+    background-color: antiquewhite;
+    padding: 0 5% 5% 5%;
+}
+
+nav ul{
+    justify-content: space-evenly;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0 0 20% 0;
+    margin: 26% 0;
+}
+
+#home{
+    padding: 20% 0 20% 0;
+}
+
+#home a, nav ul li a {
+    border: 0.2vw solid darkred;
+    font-size: calc(2px + 1vw);
+    display: block;
+    text-decoration: none;
+    color: darkred;
+    background-color: orange;
+    text-align: center;
+    padding: 2vh 0;
+    white-space: nowrap;
+}
+
+p{
+    font-size: calc(1px + 1.5vw);
+}
+
+main p{
+    width: 100%;
+    max-width: 100%;
+    padding: 2% 2% 0 2%;
+}
+
+img{
+    width: 30%;
+    margin: 2%;
+    max-width: 40%;
+    max-height: 30%;
+}
+
+#middle{
+    display: flex;
+    background-color: lightgoldenrodyellow;
+    min-height: 100vh;
+    height: 100%;
+}
+
+#bio{
+    display: flex;
+}
+
+/* Media query for small screen sizes (max-width: 750px) */
+@media screen and (max-width: 750px){
+    header p, header{
+        text-align: center;
+    }
+
+    /* Adjust layout for small screens */
+    #middle{
+        display: block;
+    }
+
+    nav {
+        max-width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+
+    nav ul{
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+        min-height: 0;
+        display: flex;
+    }
+
+    #home, nav ul li{
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        border: 0.2vw solid darkred;
+        border-left: 0;
+    }
+
+    #home{
+        border-left: 0.2vw solid darkred;
+    }
+
+    #home a, nav ul li a {
+        border: none;
+        background-color: orange;
+        padding: 0;
+        font-size: calc(4px + 1vw);
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    #bio{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    img{
+        padding: 5% 0;
+        margin: auto;
+        width: 40%;
+    }
+
+    main p{
+        padding: 1vh 3vw;
+    }
+}
